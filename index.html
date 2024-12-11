@@ -160,9 +160,25 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
+      <h1 class="title is-3 has-text-centered">Training Settings</h1>
+      <!-- Training Settings Description -->
+      <div class="content has-text-justified">
+        <p>
+          Our reinforcement learning framework utilizes IsaacLab as the primary simulation environment to train quadruped robots on various terrains. The training setup is meticulously crafted to facilitate the development of stable, symmetric, and elegant walking gaits.
+        </p>
+        <p>
+          The training environment features diverse terrain types, including flat surfaces, rough terrains, and structured obstacles like horizontal rails and waves. These terrains are systematically arranged to challenge and refine the robot's locomotion capabilities. For vision-based policies, predictable terrains are employed to aid learning from depth camera data.
+        </p>
+        <p>
+          The reward function integrates multiple components such as linear and angular velocity tracking, joint accelerations, collision avoidance, and base height maintenance. These elements are weighted to encourage natural gaits while minimizing unnatural behaviors like pronking or galloping.
+        </p>
+        <p>
+          Leveraging parallel environments on high-performance GPUs, the model is trained across thousands of iterations to achieve convergence within a short time frame. Sparse terrain obstacles are introduced to encourage natural walking behaviors without excessive reliance on reward shaping.
+        </p>
+      </div>
+      
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
-        <h1 class="title is-3 has-text-centered">Training Settings</h1>
         <!-- Your image here -->
         <img src="static/images/Flat_terrain_Blind.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
@@ -195,7 +211,7 @@
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
-        <h1 class="title is-3 has-text-centered">Walking Gaits Withou Terrain Shapings</h1>
+        <h1 class="title is-3 has-text-centered">Walking Gaits Without Terrain Shaping</h1>
         <!-- Your image here -->
         <video controls autoplay loop muted style="max-width: 100%; height: auto;">
           <source src="static/videos/Pronking_Isaac_Gym.mp4" type="video/mp4">
