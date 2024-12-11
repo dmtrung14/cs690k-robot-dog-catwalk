@@ -164,16 +164,16 @@
       <!-- Training Settings Description -->
       <div class="content has-text-justified">
         <p>
-          Our reinforcement learning framework utilizes IsaacLab as the primary simulation environment to train quadruped robots on various terrains. The training setup is meticulously crafted to facilitate the development of stable, symmetric, and elegant walking gaits.
+          Our reinforcement learning framework utilizes <strong>IsaacSin</strong> as the primary simulation environment to train quadruped robots on various terrains. The training setup is meticulously crafted to facilitate the development of <strong>stable</strong>, <strong>symmetric</strong>, and <strong>elegant walking gaits</strong>.
         </p>
         <p>
-          The training environment features diverse terrain types, including flat surfaces, rough terrains, and structured obstacles like horizontal rails and waves. These terrains are systematically arranged to challenge and refine the robot's locomotion capabilities. For vision-based policies, predictable terrains are employed to aid learning from depth camera data.
+          The training environment features diverse terrain types, including <strong>flat surfaces</strong>, <strong>rough terrains</strong>, and structured obstacles like <strong>horizontal rails</strong> and <strong>waves</strong>. These terrains are systematically arranged to challenge and refine the robot's locomotion capabilities. For vision-based policies, predictable terrains are employed to aid learning from <strong>depth camera data</strong>.
         </p>
         <p>
-          The reward function integrates multiple components such as linear and angular velocity tracking, joint accelerations, collision avoidance, and base height maintenance. These elements are weighted to encourage natural gaits while minimizing unnatural behaviors like pronking or galloping.
+          The reward function integrates multiple components such as <strong>linear and angular velocity tracking</strong>, joint accelerations, collision avoidance, and base height maintenance. These elements are weighted to encourage <strong>natural gaits</strong> while minimizing unnatural behaviors like pronking or galloping.
         </p>
         <p>
-          Leveraging parallel environments on high-performance GPUs, the model is trained across thousands of iterations to achieve convergence within a short time frame. Sparse terrain obstacles are introduced to encourage natural walking behaviors without excessive reliance on reward shaping.
+          Leveraging <strong>parallel environments</strong> on high-performance GPUs, the model is trained across thousands of iterations to achieve convergence within a short time frame. Sparse terrain obstacles are introduced to encourage <strong>natural walking behaviors</strong> without excessive reliance on reward shaping.
         </p>
       </div>
       
@@ -210,8 +210,9 @@
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
+      <h1 class="title is-3 has-text-centered">Walking Gaits Without Terrain Shaping</h1>
        <div class="item">
-        <h1 class="title is-3 has-text-centered">Walking Gaits Without Terrain Shaping</h1>
+        
         <!-- Your image here -->
         <video controls autoplay loop muted style="max-width: 100%; height: auto;">
           <source src="static/videos/Pronking_Isaac_Gym.mp4" type="video/mp4">
@@ -231,20 +232,15 @@
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <video controls autoplay loop muted style="max-width: 100%; height: auto;">
+          <source src="static/videos/Walking_without_terrain_shaping.mp4" type="video/mp4">
+        </video>
         <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
+          Demonstration of pronking behavior on flat terrain without terrain shaping. The robot is trained with depth camera.
+        </h2>
+      </div>
     </div>
   </div>
-</div>
 </div>
 </section>
 <!-- End image carousel -->
