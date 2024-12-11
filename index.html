@@ -210,58 +210,61 @@
   <div class="hero-body">
     <div class="container">
       <h1 class="title is-3 has-text-centered">Walking Gaits Without Terrain Shaping</h1>
+
+      <!-- Descriptive content -->
+      <div class="content has-text-justified">
+        <p>
+          Robots trained without terrain shaping often exhibit <strong>unnatural gaits</strong> when navigating flat terrain. 
+          This behavior, such as <strong>pronking</strong>, arises due to the absence of environmental cues that guide optimal foot placement and balance.
+        </p>
+        <p>
+          The videos below demonstrate the challenges faced by robots trained in such environments, including 
+          <strong>instability</strong> and <strong>inefficient movement patterns</strong>. Terrain shaping introduces 
+          structured environments that encourage natural and symmetric gaits.
+        </p>
+      </div> 
+
+      <!-- Carousel with videos -->
       <div id="results-carousel" class="carousel results-carousel">
-       <div class="item"
-        <!-- Your image here -->
-        <video controls autoplay loop muted style="max-width: 100%; height: auto;">
-          <source src="static/videos/Pronking_Isaac_Gym.mp4" type="video/mp4">
-        </video>
-        <h2 class="subtitle has-text-centered">
-          Demonstrating pronking behavior in the blind policy when trained on flat terrain. This highlights the robot's tendency to adopt unnatural gaits without terrain shaping interventions.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <video controls autoplay loop muted style="max-width: 100%; height: auto;">
-          <source src="static/videos/Pronking_Isaac_Lab.mp4" type="video/mp4">
-        </video>
-        <h2 class="subtitle has-text-centered">
-          Visualization of robot locomotion on flat terrain with a depth camera and without terrain shaping. The absence of terrain shaping results in irregular and unnatural gaits
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <video controls autoplay loop muted style="max-width: 100%; height: auto;">
-          <source src="static/videos/Walking_without_terrain_shaping.mp4" type="video/mp4">
-        </video>
-        <h2 class="subtitle has-text-centered">
-          Demonstration of pronking behavior on flat terrain without terrain shaping. The robot is trained with depth camera.
-        </h2>
+        <div class="item">
+          <!-- First video -->
+          <video controls autoplay loop muted style="max-width: 100%; height: auto;">
+            <source src="static/videos/Pronking_Isaac_Gym.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered">
+            Demonstrating pronking behavior in the blind policy when trained on flat terrain. This highlights the robot's tendency to adopt unnatural gaits without terrain shaping interventions.
+          </h2>
+        </div>
+        <div class="item">
+          <!-- Second video -->
+          <video controls autoplay loop muted style="max-width: 100%; height: auto;">
+            <source src="static/videos/Pronking_Isaac_Lab.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered">
+            Visualization of robot locomotion on flat terrain with a depth camera and without terrain shaping. The absence of terrain shaping results in irregular and unnatural gaits.
+          </h2>
+        </div>
+        <div class="item">
+          <!-- Third video -->
+          <video controls autoplay loop muted style="max-width: 100%; height: auto;">
+            <source src="static/videos/Walking_without_terrain_shaping.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered">
+            Demonstration of pronking behavior on flat terrain without terrain shaping. The robot is trained with depth camera.
+          </h2>
+        </div>
       </div>
     </div>
-
-        <!-- Descriptive content -->
-    <div class="content has-text-centered" style="margin-top: 2rem;">
-      <p>
-        Robots trained without terrain shaping often exhibit <strong>unnatural gaits</strong> when navigating flat terrain. 
-        This behavior, such as <strong>pronking</strong>, arises due to the absence of environmental cues that guide optimal foot placement and balance.
-      </p>
-      <p>
-        The videos above demonstrate the challenges faced by robots trained in such environments, including 
-         <strong>instability</strong> and <strong>inefficient movement patterns</strong>. Terrain shaping introduces 
-        structured environments that encourage natural and symmetric gaits.
-       </p>
-    </div> 
   </div>
-</div>
 </section>
 <!-- End image carousel -->
+
 
 <!-- Video carousel -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
+      <h2 class="title is-3">Final Results</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <video poster="" id="video1" autoplay controls muted loop height="100%">
